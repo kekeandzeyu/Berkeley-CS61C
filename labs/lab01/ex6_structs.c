@@ -10,21 +10,21 @@ struct Student {
 };
 
 int main() {
-  // TODO: declare a variable student of type struct Student
-  // Note: this struct is stored on the stack
-  ________________ student;
+    // Declare a variable student of type struct Student
+    // Note: this struct is stored on the stack
+    struct Student student;
 
-  // TODO: print out the size of a struct Student
-  // While this may seem out of place now, it will be useful in the future!
-  // Hint: there's an operator that can calculate this for you!
-  printf("Size of a struct Student: %lu bytes\n", ______);
+    // Print out the size of a struct Student
+    // While this may seem out of place now, it will be useful in the future!
+    // Hint: there's an operator that can calculate this for you!
+    printf("Size of a struct Student: %lu bytes\n", sizeof(struct Student));
 
-  // TODO: set student's id field to 5
-  // Hint: the dot notation accesses a struct's fields
-  ______.______ = 5;
+    // Set student's id field to 5
+    // Hint: the dot notation accesses a struct's fields
+    student.id = 5;
 
-  // TODO: print out student's id field
-  printf("Student's ID: %d\n", ______);
+    // Print out student's id field
+    printf("Student's ID: %d\n", student.id);
 
-  return 0;
+    return 0;
 }
